@@ -105,31 +105,31 @@ echo 'Installing: Xampp'
 # apt update
 # apt upgrade
 # wget chmod +x xampp-linux-x64-7.1.10-0-installer.run
-# chmod +x xampp-linux-x64-7.1.10-0-installer.run
-# ./xampp-linux-x64-7.1.10-0-installer.run
+chmod +x xampp-linux-x64-7.1.10-0-installer.run
+./xampp-linux-x64-7.1.10-0-installer.run
 
 #In order to start all the xampp services, we need to run the following command in the terminal:
-# /opt/lampp/xampp start
-# /opt/lampp/xampp stop
-# /opt/lampp/xampp restart
+/opt/lampp/xampp start
+/opt/lampp/xampp stop
+/opt/lampp/xampp restart
 
 #Start Apache only:
-# /opt/lampp/xampp startapache
-# /opt/lampp/xampp stopapache
+/opt/lampp/xampp startapache
+/opt/lampp/xampp stopapache
 
 #Start Proftpd FTP server only:
-# /opt/lampp/xampp startftp
-# /opt/lampp/xampp stopftp
+/opt/lampp/xampp startftp
+/opt/lampp/xampp stopftp
 
 #Start MySQL Database server only:
-# /opt/lampp/xampp startmysql
-# /opt/lampp/xampp stopmysql
+/opt/lampp/xampp startmysql
+/opt/lampp/xampp stopmysql
 
 #Xampp help
-# /opt/lampp/xampp --help
+/opt/lampp/xampp --help
 
 #Xampp uninstall
-# /opt/lampp/uninstall
+/opt/lampp/uninstall
 
 ## Copy configurations into ~/.config
  mkdir -p ~/.config/i3

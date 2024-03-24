@@ -119,17 +119,17 @@ echo 'Installing: Xampp'
 
 #Start Proftpd FTP server only:
 # /opt/lampp/xampp startftp
-# /opt/lampp/xampp stopftp
+/opt/lampp/xampp stopftp
 
 #Start MySQL Database server only:
-# /opt/lampp/xampp startmysql
-# /opt/lampp/xampp stopmysql
+/opt/lampp/xampp startmysql
+/opt/lampp/xampp stopmysql
 
 #Xampp help
-# /opt/lampp/xampp --help
+/opt/lampp/xampp --help
 
 #Xampp uninstall
-# /opt/lampp/uninstall
+/opt/lampp/uninstall
 
 ## Copy configurations into ~/.config
  mkdir -p ~/.config/i3

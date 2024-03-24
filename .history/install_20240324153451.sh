@@ -126,10 +126,10 @@ echo 'Installing: Xampp'
 # /opt/lampp/xampp stopmysql
 
 #Xampp help
-# /opt/lampp/xampp --help
+/opt/lampp/xampp --help
 
 #Xampp uninstall
-# /opt/lampp/uninstall
+/opt/lampp/uninstall
 
 ## Copy configurations into ~/.config
  mkdir -p ~/.config/i3

@@ -72,7 +72,7 @@ echo 'Installing meson'
   sudo ninja install
   cd ../..
 
-## Stack BACK
+## Stack 
 echo 'Installing: Mysql'
  sudo apt install mysql-server
  sudo systemctl status mysql
@@ -81,13 +81,10 @@ echo 'Installing: Mysql'
 echo 'Installing: PostgresSQL'
 
 # Step 1 — Installing PostgreSQL
- sudo apt update
- sudo apt install postgresql postgresql-contrib
- sudo systemctl start postgresql.service
+sudo apt update
+sudo apt install postgresql postgresql-contrib
+sudo systemctl start postgresql.service
  sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
-echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main"
- sudo tee /etc/apt/sources.list.d/pgadmin4.list
- sudo apt install pgadmin4
 # Step 2 — Creating a New Role
 #  sudo -u postgres createuser --interactive --pwprompt
 
@@ -99,37 +96,9 @@ echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs)
 #  postgers://localhost
 #If a username and a password are needed, the updated URI looks like this:
 #  postgres://<username>:<password>@localhost
-echo 'Installing: Xampp'
+echo 'Installing: phpmyadmin'
+echo 'Installing: apache'
 
-# sudo -s
-# apt update
-# apt upgrade
-# wget chmod +x xampp-linux-x64-7.1.10-0-installer.run
-# chmod +x xampp-linux-x64-7.1.10-0-installer.run
-# ./xampp-linux-x64-7.1.10-0-installer.run
-
-#In order to start all the xampp services, we need to run the following command in the terminal:
-# /opt/lampp/xampp start
-# /opt/lampp/xampp stop
-# /opt/lampp/xampp restart
-
-#Start Apache only:
-# /opt/lampp/xampp startapache
-# /opt/lampp/xampp stopapache
-
-#Start Proftpd FTP server only:
-# /opt/lampp/xampp startftp
-# /opt/lampp/xampp stopftp
-
-#Start MySQL Database server only:
-# /opt/lampp/xampp startmysql
-# /opt/lampp/xampp stopmysql
-
-#Xampp help
-# /opt/lampp/xampp --help
-
-#Xampp uninstall
-# /opt/lampp/uninstall
 
 ## Copy configurations into ~/.config
  mkdir -p ~/.config/i3

@@ -129,7 +129,7 @@ echo 'Installing: Xampp'
 # /opt/lampp/xampp --help
 
 #Xampp uninstall
-# /opt/lampp/uninstall
+/opt/lampp/uninstall
 
 ## Copy configurations into ~/.config
  mkdir -p ~/.config/i3
