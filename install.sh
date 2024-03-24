@@ -39,7 +39,7 @@ fc-cache -fv
  echo 'Installing filezilla'
   sudo apt-get install -y filezilla
  echo 'Installing: Alacritty.'
-  sudo snap install alacritty --classic
+  #sudo snap install alacritty --classic
  
  echo 'Installing: Sublime.'
   sudo snap install sublime-text --classic
@@ -135,14 +135,14 @@ echo 'Installing: Xampp'
  mkdir -p ~/.config/i3
  mkdir -p ~/.config/rofi
  mkdir -p ~/.config/compton
- mkdir -p ~/.config/alacritty
+ #mkdir -p ~/.config/alacritty
 
  cp .config/i3/config ~/.config/i3/config
  cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
  cp .config/i3/clipboard_fix.sh ~/.config/i3/clipboard_fix.sh
  cp .config/rofi/config ~/.config/rofi/config
  cp .config/compton/compton.conf ~/.config/compton/compton.conf
- cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+ #cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
  cp .fehbg ~/.fehbg
  cp -r .wallpaper ~/.wallpaper 
